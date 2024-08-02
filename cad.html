@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body {
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJW5MrImv1DdzVG2kkLh2Cz7QbeXI1KIUDeA&s);
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: Arial, Helvetica, sans-serif;
+            max-width:600px;
+            margin: auto;
+            padding: 20px;
+            background-color: #d4c9c9;
+        }
+
+        h1 {
+            color: white;
+        }
+
+        h4 {
+            color: white;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color:white ;
+        }
+
+        label, textarea{
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            border: 1px solid none;
+            border-radius: 4px;
+        }
+
+        button {
+            padding: 10px 15px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-left: 550px;
+        }
+        
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+    <h1>Formulário de Contato</h1>
+    <form action="submit" method="'post">
+        <label for="'name">Nome:</label>
+        <input type="text" id="name" required maxlenght="50" 
+        minlength="2" placeholder="Digite seu nome">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required
+        placeholder="Digite seu email">
+
+        <label for="Telefone">Telefone:</label>
+        <input type="Tel" id="Telefone" name="Telefone" pattern="\(d{2} \d{4,5}-d{4})"
+        placeholder="(66) 99988-8888" required>
+
+        <label for="age">Idade:</label>
+        <input type="number" name="age" id="age" min="18" max="100" required
+        placeholder="Digite sua idade">
+
+        <h4>Linguagem Preferida</h4>
+        <label for="html">HTML</label>
+        <input type="radio" name="Fav_Language" value="html" id="html">
+
+        <label for="css">CSS</label>
+        <input type="radio" name="Fav_Language" value="css" id="css">
+
+        <label for="javaScript">JavaScript</label>
+        <input type="radio" nmae="Fav_Language" value="javaScript" id="JavaScript">
+
+        <label for="message">Mensagem:</label>
+        <textarea name="message" id="message" rows="5" maxlength="10"
+        placeholder="Digite sua Mensagem"></textarea>
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
